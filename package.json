@@ -1,0 +1,57 @@
+{
+  "name": "react-native-empty-state",
+  "version": "0.1.0",
+  "description": "Is a tiny package display empty state",
+  "main": "build/index.js",
+  "types": "src/index.d.ts",
+  "module": "build/index.es.js",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
+    "react-native": ">=60"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@rollup/plugin-babel": "^5.0.3",
+    "@rollup/plugin-commonjs": "^13.0.0",
+    "@rollup/plugin-node-resolve": "^8.0.1",
+    "@rollup/plugin-typescript": "^3.1.1",
+    "@types/jest": "^26.0.0",
+    "@types/react": "^16.9.36",
+    "@types/react-native": "^0.62.13",
+    "babel-jest": "^26.0.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "jest": "^26.0.1",
+    "jest-environment-enzyme": "^7.1.2",
+    "jest-enzyme": "^7.1.2",
+    "jsdom": "^16.2.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-native": "^0.62.2",
+    "rollup": "^2.16.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.2",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-sourcemaps": "^0.6.2",
+    "rollup-plugin-terser": "^6.1.0",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "typescript": "^3.9.5"
+  },
+  "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+  "lint": "tslint -p tsconfig.json"
+}
