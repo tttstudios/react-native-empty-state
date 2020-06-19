@@ -1,6 +1,6 @@
 /// <reference path="index.d.ts" />
 import * as React from 'react';
-import { View, Image } from 'react-native';
+import { View, Image, Text, TouchableOpacity } from 'react-native';
 import { EmptyStateViewProps } from '@twotalltotems/react-native-empty-state';
 import styles from './styles';
 
@@ -21,8 +21,21 @@ export default class EmptyStateView extends React.Component<EmptyStateViewProps>
       buttonText,
       buttonTextStyle,
       children,
+      onButtonClick,
       style,
     } = this.props;
-    return <View testID="containerView">{!!imageSource && <Image source={imageSource} />}</View>;
+    return (
+      <View testID="containerView" style={style}>
+        {!!imageSource && <Image source={imageSource} style={imageStyle} />}
+        {headerText && <Text style={headerTextStyle}>{headerText}</Text>}
+        {infoText && <Text style={infoTextStyle}>{infoText}</Text>}
+        {buttonText && (
+          <TouchableOpacity onPress={onButtonClick} style={buttonStyle}>
+            <Text style={buttonTextStyle}>{buttonText}</Text>
+          </TouchableOpacity>
+        )}
+        {children}
+      </View>
+    );
   }
 }
