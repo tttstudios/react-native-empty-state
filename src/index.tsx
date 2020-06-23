@@ -12,24 +12,29 @@ export default class EmptyStateView extends React.Component<EmptyStateViewProps>
   render() {
     const {
       imageSource,
-      imageStyle,
+      imageStyle: overrideImageStyle,
       headerText,
-      headerTextStyle,
-      infoText,
-      infoTextStyle,
+      headerTextStyle: overrideHeaderStyle,
+      subHeaderText,
+      subHeaderTextStyle: overrideSubHeaderStyle,
       buttonStyle,
       buttonText,
-      buttonTextStyle,
+      buttonTextStyle: overrideButtonTextStyle,
       children,
       onButtonClick,
       style,
     } = this.props;
+    const imageStyle = { ...styles.IMAGE_STYLE, ...overrideImageStyle };
+    const headerTextStyle = { ...styles.HEADER_STYLE, ...overrideHeaderStyle };
+    const subHeaderTextStyle = { ...styles.SUB_HEADER_STYLE, ...overrideSubHeaderStyle };
+    const buttonTextStyle = { ...styles.BUTTON_TEXT_STYLE, ...overrideButtonTextStyle };
+
     return (
       <View testID="containerView" style={style}>
         {!!imageSource && <Image source={imageSource} style={imageStyle} />}
-        {headerText && <Text style={headerTextStyle}>{headerText}</Text>}
-        {infoText && <Text style={infoTextStyle}>{infoText}</Text>}
-        {buttonText && (
+        {!!headerText && <Text style={headerTextStyle}>{headerText}</Text>}
+        {!!subHeaderText && <Text style={subHeaderTextStyle}>{subHeaderText}</Text>}
+        {!!buttonText && (
           <TouchableOpacity onPress={onButtonClick} style={buttonStyle}>
             <Text style={buttonTextStyle}>{buttonText}</Text>
           </TouchableOpacity>

@@ -16,6 +16,12 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
+  "testMatch": [
+    "<rootDir>/__tests__/*.test.js"
+  ],
+  "transform": {
+    "^.+\\.jsx$": "babel-jest"
+  },
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",

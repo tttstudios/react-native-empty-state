@@ -24,13 +24,13 @@ declare module '@twotalltotems/react-native-empty-state' {
      */
     headerTextStyle?: TextStyle | TextStyle[];
     /**
-     * Style of the header
+     * Text of Sub header
      */
-    infoText?: string;
+    subHeaderText?: string;
     /**
-     * Style of the header
+     * Style of the sub header
      */
-    infoTextStyle?: TextStyle | TextStyle[];
+    subHeaderTextStyle?: TextStyle | TextStyle[];
     /**
      * Style for the container
      */
@@ -53,7 +53,7 @@ declare module '@twotalltotems/react-native-empty-state' {
      */
     onButtonClick?: () => void;
     /**
-     * Children
+     * Any Children want to pass in
      */
     children?: React.ReactNode;
   }

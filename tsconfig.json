@@ -6,7 +6,7 @@
     "strict": true,
     "jsx": "react-native",
     "target": "es2019",
-    "module": "es6",
+    "module": "es2015",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "noImplicitAny": true,
@@ -31,6 +31,6 @@
     "typeRoots": ["./node_modules/@types"],
     "esModuleInterop": true
   },
-  "exclude": ["node_modules", "babel.config.js", "jest.config.js", "build"],
+  "exclude": ["node_modules", "babel.config.js", "jest.config.js", "build", "dist", "example", "rollup.config.js"],
   "include": ["src/**/*"]
 }
