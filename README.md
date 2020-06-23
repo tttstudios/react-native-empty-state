@@ -4,18 +4,7 @@ Is a tiny package display empty state.
 
 ## Installation
 
-## Basic Usage
-
-```js
-import OTPInputView from '@twotalltotems/react-native-otp-input'
-
-...
-
-<OTPInputView pinCount={4} />
-
-```
-
-## More Advanced Usage
+## Usage
 
 ```js
 import EmptyStateView from 'react-native-empty-state';
