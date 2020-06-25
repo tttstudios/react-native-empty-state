@@ -32,10 +32,14 @@ export default class EmptyStateView extends React.Component<EmptyStateViewProps>
     return (
       <View testID="containerView" style={style}>
         {!!imageSource && <Image source={imageSource} style={imageStyle} />}
-        {!!headerText && <Text style={headerTextStyle}>{headerText}</Text>}
+        {!!headerText && (
+          <Text testID="headerText" style={headerTextStyle}>
+            {headerText}
+          </Text>
+        )}
         {!!subHeaderText && <Text style={subHeaderTextStyle}>{subHeaderText}</Text>}
         {!!buttonText && (
-          <TouchableOpacity onPress={onButtonClick} style={buttonStyle}>
+          <TouchableOpacity testID="testButton" onPress={onButtonClick} style={buttonStyle}>
             <Text style={buttonTextStyle}>{buttonText}</Text>
           </TouchableOpacity>
         )}

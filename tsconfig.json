@@ -6,7 +6,7 @@
     "strict": true,
     "jsx": "react-native",
     "target": "es2019",
-    "module": "es2015",
+    "module": "commonjs",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "noImplicitAny": true,

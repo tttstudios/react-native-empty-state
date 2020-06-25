@@ -11,11 +11,7 @@ const reactNativeLib = path.resolve(__dirname, '..');
 
 module.exports = {
   watchFolders: [path.resolve(__dirname, 'node_modules'), reactNativeLib],
-  resolver: {
-    blacklistRE: blacklist([
-      new RegExp(`${reactNativeLib}/node_modules/react-native/.*`),
-    ]),
-  },
+  resolver: {},
   transformer: {
     getTransformOptions: async () => ({
       transform: {

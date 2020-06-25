@@ -22,8 +22,8 @@ const SUB_HEADER_STYLE: TextStyle = {
 const BUTTON_TEXT_STYLE: TextStyle = {
   fontSize: 16,
   textDecorationLine: 'underline',
-  textDecorationColor: '#00ff00',
-  color: '#00ff00',
+  textDecorationColor: '#0000ff',
+  color: '#0000ff',
 };
 export default {
   CONTAINER_STYLE,
