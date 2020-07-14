@@ -2,16 +2,25 @@
 
 ![Tests](https://github.com/tttstudios/react-native-empty-state/workflows/Tests/badge.svg)
 
-Is a tiny package display empty state.
+When we use list or table, sometimes the data is null or empty, so there is a need to display the state of them instead of showing nothing. Empty screens make user confuse because not clearing about what's going on, if there is an error/bug or just because no data to show.
+
+Referral for [Empty View Design](http://tympanus.net/codrops/2013/01/09/designing-for-the-empty-states/)
+## Detailed design
+
+There will be 4 parts in this component: An image displays empty state, a header text, a sub header text and a button. We also accept children that pass into this view a props.
 
 ![demo images](https://github.com/tttstudios/react-native-empty-state/blob/master/assets/Screenshots_row1.png)
 
 ## Installation
 
+`npm install --save @twotalltotems/react-native-empty-state-view`
+or
+`yarn add @twotalltotems/react-native-empty-state-view`
+
 ## Usage
 
 ```js
-import EmptyStateView from 'react-native-empty-state';
+import EmptyStateView from '@twotalltotems/react-native-empty-state';
 
 ...
 
@@ -23,7 +32,44 @@ import EmptyStateView from 'react-native-empty-state';
     />
 
 ```
+## More Advanced Usage
 
+```js
+import OTPInputView from '@twotalltotems/react-native-empty-state'
+
+...
+
+    <EmptyStateView
+        imageSource={require('./assets/emptyImage.png')}
+        headerText="You have Nothing"
+        subHeaderText="Please add more content"
+        buttonText="Next"
+        buttonStyle={styles.buttonStyle}
+        headerTextStyle={styles.headerTextStyle}
+        subHeaderTextStyle={styles.subHeaderTextStyle}
+    >
+        <Text>Hello world</Text>
+    </EmptyStateView>
+
+const styles = StyleSheet.create({
+  headerTextStyle: {
+    color: "#ff0000",
+    fontSize: 34,
+  },
+
+  subHeaderTextStyle: {
+    fontSize: 14,
+    fontStyle: 'italic'
+  },
+
+  buttonStyle: {
+    borderColor: "#000",
+    borderRadius: 10,
+    borderWidth: 1
+  },
+});
+
+```
 ## Parameters
 
 | Parameter          | Required | Description                                         |
@@ -41,12 +87,8 @@ import EmptyStateView from 'react-native-empty-state';
 | onButtonClick      | NO       | Callback, Trigger when the button inside is clicked |
 | children           | NO       | Accept Children inside the View                     |
 
-## Roadmap
-
-- [x] Typescript definition file
-- [x] Typescript implementation
-- [x] Add basic unit tests
-- [ ] Add integration tests
+## Inspiration from:
+[DZNEmptyDataSet](https://github.com/dzenbot/DZNEmptyDataSet)
 
 ## Contributors
 
@@ -62,7 +104,7 @@ import EmptyStateView from 'react-native-empty-state';
 
 ## Premium Support By TTT Studios
 
-OTP input is presented by the mobile team at [TTT Studios](https://ttt.studio). We are a Digital Innovation Studio based out of Vancouver, Canada, delivering custom software and solutions that are designed and developed 100% in-house. The technologies we work with include AR & VR, IoT, AI, security & encryption, and cloud computing.
+React native empty-state-view is presented by the mobile team at [TTT Studios](https://ttt.studio). We are a Digital Innovation Studio based out of Vancouver, Canada, delivering custom software and solutions that are designed and developed 100% in-house. The technologies we work with include AR & VR, IoT, AI, security & encryption, and cloud computing.
 
 <div align="right">
 	<img src="https://ttt.studio/wp-content/themes/tttwordpresstheme/imgs/ttt-colour.png" width="200px"/>
