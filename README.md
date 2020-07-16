@@ -2,12 +2,13 @@
 
 ![Tests](https://github.com/tttstudios/react-native-empty-state/workflows/Tests/badge.svg)
 
-When we use list or table, sometimes the data is null or empty, so there is a need to display the state of them instead of showing nothing. Empty screens make user confuse because not clearing about what's going on, if there is an error/bug or just because no data to show.
+When we need to show a list of data, sometimes the data is null or empty. This empty data set still needs to keep the user informed as to why there is no data showing. Showing an empty screen, can confuse the user as there is no clear indication of what data is being returned. If there is an error/bug we should display it to the user.
 
 Referral for [Empty View Design](http://tympanus.net/codrops/2013/01/09/designing-for-the-empty-states/)
+
 ## Detailed design
 
-There will be 4 parts in this component: An image displays empty state, a header text, a sub header text and a button. We also accept children that pass into this view a props.
+There will be 4 optional components in this view: An image, header text, sub header text and a button. This view also accepts children as props.
 
 ![demo images](https://github.com/tttstudios/react-native-empty-state/blob/master/assets/Screenshots_row1.png)
 
@@ -32,10 +33,11 @@ import EmptyStateView from '@twotalltotems/react-native-empty-state';
     />
 
 ```
+
 ## More Advanced Usage
 
 ```js
-import OTPInputView from '@twotalltotems/react-native-empty-state'
+import EmptyStateView from '@twotalltotems/react-native-empty-state'
 
 ...
 
@@ -48,7 +50,7 @@ import OTPInputView from '@twotalltotems/react-native-empty-state'
         headerTextStyle={styles.headerTextStyle}
         subHeaderTextStyle={styles.subHeaderTextStyle}
     >
-        <Text>Hello world</Text>
+        <Text>Extra descriptive text</Text>
     </EmptyStateView>
 
 const styles = StyleSheet.create({
@@ -70,24 +72,26 @@ const styles = StyleSheet.create({
 });
 
 ```
+
 ## Parameters
 
-| Parameter          | Required | Description                                         |
-| ------------------ | -------- | --------------------------------------------------- |
-| imageSource        | NO       | Source of the main image                            |
-| imageStyle         | NO       | Main image Styles                                   |
-| headerText         | NO       | Main header text                                    |
-| headerTextStyle    | NO       | Main header text style                              |
-| subHeaderText      | NO       | Sub header text                                     |
-| subHeaderTextStyle | NO       | Sub header text style                               |
-| style              | NO       | Main style for the container                        |
-| buttonText         | NO       | Text for the button in view                         |
-| buttonTextStyle    | NO       | Button text style                                   |
-| buttonStyle        | NO       | Button text style                                   |
-| onButtonClick      | NO       | Callback, Trigger when the button inside is clicked |
-| children           | NO       | Accept Children inside the View                     |
+| Parameter          | Required | Description                         |
+| ------------------ | -------- | ----------------------------------- |
+| imageSource        | NO       | Source of the main image            |
+| imageStyle         | NO       | Main image styles                   |
+| headerText         | NO       | Main header text                    |
+| headerTextStyle    | NO       | Main header text style              |
+| subHeaderText      | NO       | Sub header text                     |
+| subHeaderTextStyle | NO       | Sub header text style               |
+| style              | NO       | Main style for the container        |
+| buttonText         | NO       | Text for the button in view         |
+| buttonTextStyle    | NO       | Button text style                   |
+| buttonStyle        | NO       | Button style                        |
+| onButtonClick      | NO       | Callback when the button is clicked |
+| children           | NO       | Additional children for render      |
 
 ## Inspiration from:
+
 [DZNEmptyDataSet](https://github.com/dzenbot/DZNEmptyDataSet)
 
 ## Contributors
