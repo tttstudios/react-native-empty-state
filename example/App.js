@@ -7,8 +7,8 @@
  */
 
 import React from 'react';
-import {SafeAreaView, StatusBar, Text, View} from 'react-native';
-import EmptyStateView from 'react-native-empty-state';
+import {View} from 'react-native';
+import EmptyStateView from '@twotalltotems/react-native-empty-state';
 
 export default class App extends React.Component {
   render() {

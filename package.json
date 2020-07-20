@@ -1,5 +1,5 @@
 {
-  "name": "react-native-empty-state",
+  "name": "@twotalltotems/react-native-empty-state",
   "version": "0.1.0",
   "description": "Is a tiny package display empty state",
   "main": "dist/index.js",
@@ -14,8 +14,15 @@
     "test": "jest",
     "build": "tsc"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "react-native",
+    "empty view",
+    "empty list"
+  ],
+  "author": "TTT Studio (https://ttt.studio)",
+  "contributors": [
+    "Eric Dao <eric.dao@ttt.studio@ttt.studio> (https://github.com/ericdao-ttt)"
+  ],
   "license": "MIT",
   "testMatch": [
     "<rootDir>/__tests__/*.test.js"

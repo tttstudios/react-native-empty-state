@@ -16,7 +16,7 @@ declare module '@twotalltotems/react-native-empty-state' {
      */
     imageStyle?: ImageStyle | ImageStyle[];
     /**
-     * Style of the header
+     * Text of the header
      */
     headerText?: string;
     /**
@@ -56,11 +56,6 @@ declare module '@twotalltotems/react-native-empty-state' {
      * Any Children want to pass in
      */
     children?: React.ReactNode;
-  }
-
-  export interface OTPInputViewState {
-    digits: string[];
-    selectedIndex: number;
   }
 
   export default class EmptyStateView extends React.Component<EmptyStateViewProps> {}
