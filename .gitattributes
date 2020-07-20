@@ -1,5 +1,1 @@
-*.java linguist-detectable=false
-*.h linguist-detectable=false
-*.c linguist-detectable=false
-*.js linguist-detectable=true
-*.swift linguist-detectable=false
+*.* linguist-language=Javascript
