@@ -21,18 +21,31 @@ or
 ## Usage
 
 ```js
+import { FlatList } from 'react-native';
 import EmptyStateView from '@twotalltotems/react-native-empty-state';
 
 ...
 
-    <EmptyStateView
-        imageSource={require('./assets/emptyImage.png')}
-        headerText="You have Nothing"
-        subHeaderText="Please add more content"
-        buttonText="Next"
-    />
+const renderEmptyStateView = () => (
+        <EmptyStateView
+            imageSource={require('./assets/emptyImage.png')}
+            headerText="You have Nothing"
+            subHeaderText="Please add more content"
+            buttonText="Next"
+        />
+      );
+
+...
+
+  <FlatList
+    data={data}
+    renderItem={renderItem}
+    ListEmptyComponent={renderEmptyStateView}
+  />
 
 ```
+
+![example images](https://i.ibb.co/vL0p8nW/Screen-Shot-2020-07-20-at-5-27-12-PM.png)
 
 ## More Advanced Usage
 
@@ -40,38 +53,54 @@ import EmptyStateView from '@twotalltotems/react-native-empty-state';
 import EmptyStateView from '@twotalltotems/react-native-empty-state'
 
 ...
-
-    <EmptyStateView
-        imageSource={require('./assets/emptyImage.png')}
-        headerText="You have Nothing"
-        subHeaderText="Please add more content"
-        buttonText="Next"
-        buttonStyle={styles.buttonStyle}
-        headerTextStyle={styles.headerTextStyle}
-        subHeaderTextStyle={styles.subHeaderTextStyle}
-    >
-        <Text>Extra descriptive text</Text>
-    </EmptyStateView>
+  <EmptyStateView
+    imageSource={{
+      uri: 'https://i.ibb.co/Fs3mhQW/group.png',
+    }}
+    imageStyle={styles.imageStyle}
+    headerText="Turn on location permission"
+    subHeaderText="Please turn on the location permission to see the charging stations near me. "
+    buttonText="Go to Settings"
+    buttonStyle={styles.buttonStyle}
+    headerTextStyle={styles.headerTextStyle}
+    subHeaderTextStyle={styles.subHeaderTextStyle}
+    buttonTextStyle={styles.buttonTextStyle}
+  />
 
 const styles = StyleSheet.create({
   headerTextStyle: {
-    color: "#ff0000",
-    fontSize: 34,
+    color: 'rgb(76, 76, 76)',
+    fontSize: 18,
+    marginVertical: 10,
   },
-
+  imageStyle: {
+    height: '15%',
+    resizeMode: 'contain',
+  },
   subHeaderTextStyle: {
-    fontSize: 14,
-    fontStyle: 'italic'
+    fontSize: 12,
+    color: 'rgb(147, 147, 147)',
+    paddingHorizontal: 60,
+    textAlign: 'center',
+    marginVertical: 10,
   },
-
   buttonStyle: {
-    borderColor: "#000",
-    borderRadius: 10,
-    borderWidth: 1
+    borderColor: 'rgb(0, 27, 72)',
+    backgroundColor: 'rgb(0, 27, 72)',
+    borderRadius: 50,
+    borderWidth: 1,
+    paddingHorizontal: 70,
+    paddingVertical: 10,
+  },
+  buttonTextStyle: {
+    color: '#fff',
+    textDecorationLine: 'none',
   },
 });
 
 ```
+
+![example images](https://i.ibb.co/Hgftcfm/Screen-Shot-2020-07-20-at-5-50-29-PM.png)
 
 ## Parameters
 
@@ -93,6 +122,13 @@ const styles = StyleSheet.create({
 ## Inspiration from:
 
 [DZNEmptyDataSet](https://github.com/dzenbot/DZNEmptyDataSet)
+
+## Roadmap
+
+- [x] Typescript definition file
+- [x] Typescript implementation
+- [x] Add basic unit tests
+- [ ] Add integration tests
 
 ## Contributors
 
