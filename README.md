@@ -1,3 +1,5 @@
+![Banner](https://github.com/tttstudios/react-native-empty-state/blob/master/assets/banner.png)
+
 # React Native Empty State package
 
 ![Tests](https://github.com/tttstudios/react-native-empty-state/workflows/Tests/badge.svg)
@@ -10,7 +12,7 @@ Referral for [Empty View Design](http://tympanus.net/codrops/2013/01/09/designin
 
 There will be 4 optional components in this view: An image, header text, sub header text and a button. This view also accepts children as props.
 
-![demo images](https://github.com/tttstudios/react-native-empty-state/blob/master/assets/Screenshots_row1.png)
+![demo images](https://github.com/tttstudios/react-native-empty-state/blob/master/assets/demo.jpg)
 
 ## Installation
 
