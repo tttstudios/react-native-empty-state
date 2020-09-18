@@ -47,8 +47,6 @@ const renderEmptyStateView = () => (
 
 ```
 
-![example images](https://i.ibb.co/vL0p8nW/Screen-Shot-2020-07-20-at-5-27-12-PM.png)
-
 ## More Advanced Usage
 
 ```js
@@ -101,8 +99,6 @@ const styles = StyleSheet.create({
 });
 
 ```
-
-![example images](https://i.ibb.co/Hgftcfm/Screen-Shot-2020-07-20-at-5-50-29-PM.png)
 
 ## Parameters
 
