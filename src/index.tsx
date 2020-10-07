@@ -6,6 +6,7 @@ import styles from './styles';
 
 export default class EmptyStateView extends React.Component<EmptyStateViewProps> {
   static defaultProps: EmptyStateViewProps = {
+    headerText: "Empty State View",
     style: styles.CONTAINER_STYLE,
   };
 

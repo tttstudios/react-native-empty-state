@@ -104,9 +104,9 @@ const styles = StyleSheet.create({
 
 | Parameter          | Required | Description                         |
 | ------------------ | -------- | ----------------------------------- |
+| headerText         | Yes      | Main header text                    |
 | imageSource        | NO       | Source of the main image            |
 | imageStyle         | NO       | Main image styles                   |
-| headerText         | NO       | Main header text                    |
 | headerTextStyle    | NO       | Main header text style              |
 | subHeaderText      | NO       | Sub header text                     |
 | subHeaderTextStyle | NO       | Sub header text style               |

@@ -18,7 +18,7 @@ declare module '@twotalltotems/react-native-empty-state' {
     /**
      * Text of the header
      */
-    headerText?: string;
+    headerText: string;
     /**
      * Style of the header
      */
