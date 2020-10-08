@@ -16,15 +16,15 @@ There will be 4 optional components in this view: An image, header text, sub hea
 
 ## Installation
 
-`npm install --save @twotalltotems/react-native-empty-state-view`
+`npm install --save @tttstudios/react-native-empty-state`
 or
-`yarn add @twotalltotems/react-native-empty-state-view`
+`yarn add @tttstudios/react-native-empty-state-view`
 
 ## Usage
 
 ```js
 import { FlatList } from 'react-native';
-import EmptyStateView from '@twotalltotems/react-native-empty-state';
+import EmptyStateView from '@tttstudios/react-native-empty-state';
 
 ...
 
@@ -50,7 +50,7 @@ const renderEmptyStateView = () => (
 ## More Advanced Usage
 
 ```js
-import EmptyStateView from '@twotalltotems/react-native-empty-state'
+import EmptyStateView from '@tttstudios/react-native-empty-state'
 
 ...
   <EmptyStateView

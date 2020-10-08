@@ -1,5 +1,5 @@
 {
-  "name": "@twotalltotems/react-native-empty-state",
+  "name": "@tttstudios/react-native-empty-state",
   "version": "0.1.0",
   "description": "Is a tiny package display empty state",
   "main": "dist/index.js",
@@ -66,7 +66,7 @@
     "jsdom": "^16.2.2",
     "react": "^16.13",
     "react-dom": "^16.13",
-    "react-native": "^0.62",
+    "react-native": "^0.63.3",
     "typescript": "^3.9.5"
   },
   "format": "prettier --write \"src/**/*.ts\" \"src/**/*.tsx\"",
