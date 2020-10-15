@@ -1,6 +1,6 @@
 {
   "name": "@tttstudios/react-native-empty-state",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Is a tiny package display empty state",
   "main": "dist/index.js",
   "types": "src/index.d.ts",
