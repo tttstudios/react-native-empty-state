@@ -66,7 +66,7 @@
     "jsdom": "^16.2.2",
     "react": "^16.13",
     "react-dom": "^16.13",
-    "react-native": "^0.63.3",
+    "react-native": "^0.64.1",
     "typescript": "^3.9.5"
   },
   "format": "prettier --write \"src/**/*.ts\" \"src/**/*.tsx\"",
